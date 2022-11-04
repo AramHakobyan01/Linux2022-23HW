@@ -1,11 +1,6 @@
-cmake_minimum_required(VERSION 3.5)
-
-project(Linux2022-23HW LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.0)
+project(BinarySearchTree)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Linux2022-23HW main.cpp)
-
-install(TARGETS Linux2022-23HW
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+add_executable(hello main.cpp)
