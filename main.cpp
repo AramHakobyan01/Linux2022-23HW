@@ -40,13 +40,6 @@ int main()
 
 
     LinuxThreadConstructorsTest();
-//    rau::LinuxThread thread1([]() { std::cout << "Hello, World!" << std::endl; });
-//    rau::LinuxThread thread2([]() { std::cout << "Hello, again!" << std::endl; });
-//    //thread1.join();
-//    std::cout << thread1.get_id();
-//    thread1.join();
-//    thread2.join();
-//    std::cerr << strerror(5);
 
     return 0;
 }
