@@ -39,6 +39,7 @@ public:
         // any thread or if any thread terminates while holding any ownership of the mutex.
     }
 
+    [[nodiscard]]
     pthread_mutex_t native_handle() const noexcept
     {
         // TODO
