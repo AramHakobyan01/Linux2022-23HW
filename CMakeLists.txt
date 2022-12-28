@@ -3,5 +3,5 @@ project(ThreadAPI)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ThreadAPITest main.cpp details/LinuxThreadDetails.h LinuxThread.h LinuxMutex.h ConditionVariable.h)
+add_executable(ThreadAPITest main.cpp Utils/ThreadAPI/details/LinuxThreadDetails.h Utils/ThreadAPI/LinuxThread.h Utils/ThreadAPI/LinuxMutex.h Utils/ThreadAPI/ConditionVariable.h)
 target_link_libraries(ThreadAPITest PUBLIC -lpthread)
