@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 3.0)
-project(BinarySearchTree)
+cmake_minimum_required(VERSION 3.23)
+project(ThreadAPI)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(hello main.cpp)
+add_executable(ThreadAPITest main.cpp Utils/ThreadAPI/details/LinuxThreadDetails.h Utils/ThreadAPI/LinuxThread.h Utils/ThreadAPI/LinuxMutex.h Utils/ThreadAPI/ConditionVariable.h)
+target_link_libraries(ThreadAPITest PUBLIC -lpthread)

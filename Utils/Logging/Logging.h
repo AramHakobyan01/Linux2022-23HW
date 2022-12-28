@@ -1,3 +1,4 @@
+#ifndef FIRST_PROJECT_LOGGING_H
 #include <iostream>
 #include <fcntl.h>
 #include <unistd.h>
@@ -7,8 +8,8 @@ void quick(int er) {
     exit(er);
 }
 
-int main(int argc, char** argv) {
-    if (argc != 3) {
+void cp(int argc, char** argv) {
+   if (argc != 3) {
         quick(errno);
     }
     int file = open(argv[1] , O_RDONLY);
@@ -26,5 +27,7 @@ int main(int argc, char** argv) {
     while (r = read(file,buffer,sizeof(buffer))) {
         write(file2,buffer,r);
     }
-    return 0;
 }
+#define FIRST_PROJECT_LOGGING_H
+
+#endif //FIRST_PROJECT_LOGGING_H
