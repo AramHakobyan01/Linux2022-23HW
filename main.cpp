@@ -37,9 +37,6 @@ void LinuxThreadConstructorsTest()
 
 int main()
 {
-
-
     LinuxThreadConstructorsTest();
-
     return 0;
 }
